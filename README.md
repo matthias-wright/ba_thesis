@@ -17,10 +17,10 @@ neural networks. For example, neural networks have been trained as binary
 classifiers to learn a decision boundary that discriminates between normal
 and abnormal ECG recordings. The training process requires normal as well as
 abnormal ECG recordings. However, public ECG databases generally consist of
-many normal recordings and a few abnormal recordings. This circumstance served
-as the main incentive behind my bachelor's thesis, train a generative adversarial
-network with only normal data and examine whether it is capable of discriminating between
-normal and abnormal data. <br/>
+many normal recordings and a few abnormal recordings. 
+This circumstance served as the main incentive for my bachelor's thesis project, 
+which was to train a generative adversarial network with only normal data and to 
+then examine whether it would be capable of discriminating between normal and abnormal data.  <br/>
 During my research phase, I conducted two separate experiments. In one experiment, I examined
 whether generative adversarial networks are capable of detecting cardiac arrhythmia in ECG recordings.
 For this, I trained a generative adversarial network with normal ECG recordings. Afterwards
