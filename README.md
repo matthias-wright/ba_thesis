@@ -19,18 +19,17 @@ and abnormal ECG recordings. The training process requires normal as well as
 abnormal ECG recordings. However, public ECG databases generally consist of
 many normal recordings and a few abnormal recordings. This circumstance served
 as the main incentive behind my bachelor's thesis, train a generative adversarial
-network with only normal data. I ran two separate experiments.
-At first I tried to detect respiratory failure on the basis of blood gas measurements.
-I trained a generative adversarial network with blood gas measurements from healthy patients.
-Afterwards, I fed two separate test sets into the trained discriminator. One containing
-blood gas measurements of healthy patients and the other containing blood gas measurements of
-patients suffering from respiratory failure. The hope was that because the discriminator was
-trained only on healthy data, the loss would be larger for the test set containing the
-examples of patients with respiratory failure. It did, but the difference was not significant
-from a medical point of view. 
-I repeated this approach for the other experiment, but I tried to detect cardiac arrhythmia in
-ECG recordings instead. This time the difference between the two test sets was significant from
-a medical perspective.
+network with only normal data and examine whether it is capable of discriminating between
+normal and abnormal data. <br/>
+During my research phase, I conducted two separate experiments. In one experiment, I examined
+whether generative adversarial networks are capable of detecting cardiac arrhythmia in ECG recordings.
+For this, I trained a generative adversarial network with normal ECG recordings. Afterwards
+I fed two separate test sets into the trained discriminator, one containing normal ECG
+recordings and the other containing arrhythmic ECG recordings. The hypothesis was that,
+because the discriminator was trained only on normal recordings, the loss would be larger
+for the test set containing arrhythmic recordings. For the other experiment, I repeated the
+procedure in order to examine whether generative adversarial networks, when given the blood gas
+measurements of a patient, can decide whether or not that patient has respiratory failure.
 
 
 ## Authors
